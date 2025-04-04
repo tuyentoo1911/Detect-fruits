@@ -1,0 +1,171 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #d3d3d3;
+    line-height: 1.6;
+    background-image: url('assets/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.stApp {
+    background: none;
+}
+
+
+.main {
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+/* Typography */
+h1 {
+    color: #00adb5;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #ff5722;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00adb5;
+    padding-bottom: 10px;
+}
+
+/* Custom Components */
+.prediction-box,
+.fruit-info-box,
+.fun-fact-box {
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prediction-box:hover,
+.fruit-info-box:hover,
+.fun-fact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.prediction-box h2 {
+    color: #00adb5;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.prediction-box p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #c7c7c7;
+}
+
+/* File Uploader */
+.stFileUploader {
+    border: 2px dashed #00adb5;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: rgba(0, 173, 181, 0.1);
+}
+
+.stFileUploader:hover {
+    border-color: #ff5722;
+    background-color: rgba(255, 87, 34, 0.2);
+}
+
+.stButton>button {
+    background-color: #00adb5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #007f87;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Chart */
+.js-plotly-plot {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    background-color: #333333 !important;
+}
+
+.js-plotly-plot:hover {
+    transform: scale(1.02);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(40, 40, 40, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.footer p {
+    color: #c7c7c7;
+    font-size: 1rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .prediction-box h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Streamlit Specific Overrides */
+.stTextInput>div>div>input {
+    color: #d3d3d3;
+    background-color: #333333;
+}
+
+.stSelectbox>div>div>select {
+    color: #d3d3d3;
+    background-color: #333333;
+}
+
+.stTextInput>label,
+.stSelectbox>label {
+    color: #c7c7c7;
+}
